@@ -171,7 +171,16 @@ std::string toTap(std::string inStr)
 
 int main()
 {
-	std::cout << toTap(".... ... ... ..... . ..... ... ... .... ....");
+	std::string input{};
+
+	std::cout<<"Write word in English to translate it to tap-sequence\n"
+			 <<"Or write tap-sequence to translate it to English word\n"
+			 <<"Your word:\t";
+
+	std::cin >> input;
+
+	std::cout << "\nThere's your word after some maic:\t";
+	std::cout << toTap(input);
 
 
 }
